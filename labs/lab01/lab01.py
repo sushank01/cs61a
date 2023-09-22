@@ -42,6 +42,16 @@ def divisible_by_k(n, k):
     0
     """
     "*** YOUR CODE HERE ***"
+    x = 0
+    i = 1 
+    while i <= n :
+        if i % k == 0 :
+            print(i)
+            x += 1
+        i += 1
+        return x 
+    
+
 
 
 
@@ -87,4 +97,12 @@ def double_eights(n):
     False
     """
     "*** YOUR CODE HERE ***"
+
+    x = n // 10
+    while n :
+        if n % 10 == 8 and x % 10 == 8 :
+            return True
+        
+        n //= 10 
+        return False 
 
